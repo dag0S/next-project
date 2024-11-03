@@ -1,0 +1,55 @@
+.button {
+  border-radius: 5px;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+.primary {
+  background: var(--primary);
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--primary-hover);
+  }
+
+  svg {
+    fill: var(--white);
+  }
+}
+
+.ghost {
+  background: transparent;
+  color: var(--black);
+  border: 1px solid var(--gray-light);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: var(--white);
+    background: var(--primary-hover);
+
+    svg {
+      fill: var(--white);
+    }
+  }
+
+  svg {
+    fill: var(--black);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.down {
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
